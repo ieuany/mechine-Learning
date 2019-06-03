@@ -10,3 +10,5 @@ $$Gain(D,a) = Ent(D) - \sum_{v=1}^{V}\frac{|D^v|}{|D|}Ent(D^v)$$
 信息增益越大， 意味这使用属性$a$来进行划分所获得的“纯度提升”越大。
 
 选择属性时，考虑的是信息增益最大者， 即$a_* = \mathop{\arg\min}_{a\in\mathrm{A}}Gain(D,a)$
+
+$\underset{a\in\mathrm{A}}{\arg\min}$

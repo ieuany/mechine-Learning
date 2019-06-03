@@ -1,6 +1,14 @@
 # mechine-Learning
 关于机器学习的笔记 
 
+---
+layout: post
+title: Github 博客画流程图
+category: how2blog
+tags: [tools, study, markdown]
+mermaid: true
+---
+
 # 1.1基本概念
 **信息熵**：$Ent(D) = -\sum_{k=1}^{|\gamma|}p_k\log_2p_k$ ，
 $Ent(D)$的值越小，则$D$的纯度越高。

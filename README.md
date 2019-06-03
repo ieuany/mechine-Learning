@@ -18,5 +18,10 @@ $$Gain\underline{\hspace{0.5em}}ratio(D,a) = \frac{Gain(D,a)}{IV(a)}$$
 
 **基尼指数**：CART决策树使用“基尼指数”来选择划分属性。数据集$D$的纯度可由基尼值来度量：
 $$Gini(D) = \sum_{k=1}^{|\gamma|}\sum_{k'\neq k}p_kp_{k'}$$
+直观来说，$Gini(D)$反应了从数据集$D$中随机抽取两个样本，其类别标记不一致的概率。因此，$Gini(D)$越小，则数据集$D$的纯度越高。
+
+属性$a$的基尼指数定义为$$Gini\underline{\hspace{0.5em}}index(D,a) = \sum_{v=1}^{V}\frac{|D^v|}{|D|}Gini(D^v)$$
+于是，再候选属性集合$A$中，选择那个使得使得划分后基尼指数最小的属性作为最优划分属性，即
+$a_* = \underset{a\in\mathrm{A}}{\arg\min}\ Gini\underline{\hspace{0.5em}}index(D,a)$。
 
 

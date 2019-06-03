@@ -25,7 +25,7 @@ $$Gini(D) = \sum_{k=1}^{|\gamma|}\sum_{k'\neq k}p_kp_{k'}$$
 $a_* = \underset{a\in\mathrm{A}}{\arg\min}\ Gini\underline{\hspace{0.5em}}index(D,a)$。
 
 ## 1.2决策树
-```mermaid
+```
 graph TD
     A[纹理=?] -->|清晰|B[根蒂=?]
     A -->|稍糊|C[触感=?]
